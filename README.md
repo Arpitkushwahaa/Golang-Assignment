@@ -1,5 +1,8 @@
 # Stocky Backend - Stock Reward Management System
 
+**Author:** Arpit Kushwaha  
+**Repository:** [github.com/Arpitkushwahaa/Golang-Assignment](https://github.com/Arpitkushwahaa/Golang-Assignment)
+
 A production-ready Golang backend for managing stock rewards, where users earn shares of Indian stocks (Reliance, TCS, Infosys, etc.) as incentives. The system tracks rewards, maintains a double-entry ledger, and provides portfolio valuation features.
 
 > 📚 **[View Documentation Index](INDEX.md)** - Complete guide to all documentation files
@@ -450,6 +453,10 @@ Error: failed to fetch price
 This project is created for educational and assessment purposes.
 
 ## 👨‍💻 Author
+
+**Arpit Kushwaha**  
+GitHub: [@Arpitkushwahaa](https://github.com/Arpitkushwahaa)  
+Repository: [Golang-Assignment](https://github.com/Arpitkushwahaa/Golang-Assignment)
 
 Developed as part of the Stocky Backend Assignment.
 

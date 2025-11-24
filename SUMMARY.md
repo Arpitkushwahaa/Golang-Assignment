@@ -357,4 +357,10 @@ The Stocky Backend is a **production-ready, fully-documented, well-architected**
 
 **Assignment Status: COMPLETE ✅**
 
+---
+
+**Author:** Arpit Kushwaha  
+**GitHub:** [@Arpitkushwahaa](https://github.com/Arpitkushwahaa)  
+**Repository:** [Golang-Assignment](https://github.com/Arpitkushwahaa/Golang-Assignment)
+
 Built with ❤️ using Go, Gin, PostgreSQL, and best practices.

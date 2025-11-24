@@ -11,8 +11,8 @@ Get the Stocky Backend up and running in 5 minutes!
 ## Step 1: Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd Assignment
+git clone https://github.com/Arpitkushwahaa/Golang-Assignment.git
+cd Golang-Assignment
 ```
 
 ## Step 2: Set Up Database
@@ -195,5 +195,8 @@ curl http://localhost:8080/api/portfolio/1
 ---
 
 **Happy Coding! 🚀**
+
+**Author:** Arpit Kushwaha  
+**Repository:** [github.com/Arpitkushwahaa/Golang-Assignment](https://github.com/Arpitkushwahaa/Golang-Assignment)
 
 Need help? Check the full documentation in README.md or create an issue on GitHub.

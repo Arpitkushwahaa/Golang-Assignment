@@ -369,4 +369,8 @@
 
 ---
 
+**Author:** Arpit Kushwaha  
+**GitHub:** [@Arpitkushwahaa](https://github.com/Arpitkushwahaa)  
+**Repository:** [Golang-Assignment](https://github.com/Arpitkushwahaa/Golang-Assignment)
+
 **The Stocky Backend is production-ready and ready for submission! 🚀**

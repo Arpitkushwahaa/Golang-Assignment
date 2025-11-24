@@ -154,7 +154,7 @@ Your README.md will display:
 
 ## ✉️ Email Template for Submission
 
-**Subject:** Stocky Backend Assignment Submission - [Your Name]
+**Subject:** Stocky Backend Assignment Submission - Arpit Kushwaha
 
 **Body:**
 
@@ -163,7 +163,7 @@ Dear Hiring Team,
 
 I have completed the Stocky Backend Assignment as per the requirements.
 
-GitHub Repository: https://github.com/YOUR_USERNAME/stocky-backend
+GitHub Repository: https://github.com/Arpitkushwahaa/Golang-Assignment
 
 Key Highlights:
 ✅ All API endpoints implemented and tested
@@ -203,9 +203,9 @@ All deliverables mentioned in the assignment are included.
 Please let me know if you need any clarification or have questions.
 
 Best regards,
-[Your Name]
-[Your Email]
-[Your Phone]
+Arpit Kushwaha
+GitHub: @Arpitkushwahaa
+Repository: github.com/Arpitkushwahaa/Golang-Assignment
 ```
 
 ## 🔍 Final Verification Checklist
