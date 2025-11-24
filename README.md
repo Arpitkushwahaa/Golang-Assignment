@@ -2,6 +2,8 @@
 
 A production-ready Golang backend for managing stock rewards, where users earn shares of Indian stocks (Reliance, TCS, Infosys, etc.) as incentives. The system tracks rewards, maintains a double-entry ledger, and provides portfolio valuation features.
 
+> 📚 **[View Documentation Index](INDEX.md)** - Complete guide to all documentation files
+
 ## 🏗 Architecture
 
 This project follows **Clean Architecture** principles with clear separation of concerns:
