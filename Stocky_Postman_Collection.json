@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "stocky-backend-collection",
+		"name": "Stocky Backend API",
+		"description": "Complete API collection for Stocky Backend - Stock Reward Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/health",
+					"host": ["{{base_url}}"],
+					"path": ["api", "health"]
+				},
+				"description": "Check if the API is running and healthy"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Reward",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userId\": 1,\n  \"symbol\": \"RELIANCE\",\n  \"quantity\": 2.5,\n  \"timestamp\": \"2025-01-23T10:30:00Z\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/reward",
+					"host": ["{{base_url}}"],
+					"path": ["api", "reward"]
+				},
+				"description": "Record that a user has been rewarded X shares of a stock. The company pays all brokerage, GST, and STT fees."
+			},
+			"response": []
+		},
+		{
+			"name": "Create Reward - TCS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userId\": 1,\n  \"symbol\": \"TCS\",\n  \"quantity\": 1.5,\n  \"timestamp\": \"2025-01-23T14:15:00Z\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/reward",
+					"host": ["{{base_url}}"],
+					"path": ["api", "reward"]
+				},
+				"description": "Create another reward for TCS stock"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Reward - INFY",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userId\": 1,\n  \"symbol\": \"INFY\",\n  \"quantity\": 3.25,\n  \"timestamp\": \"2025-01-23T16:45:00Z\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/reward",
+					"host": ["{{base_url}}"],
+					"path": ["api", "reward"]
+				},
+				"description": "Create reward for Infosys stock"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Reward - User 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userId\": 2,\n  \"symbol\": \"HDFCBANK\",\n  \"quantity\": 5.0,\n  \"timestamp\": \"2025-01-23T11:00:00Z\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/reward",
+					"host": ["{{base_url}}"],
+					"path": ["api", "reward"]
+				},
+				"description": "Create reward for a different user"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Today's Stocks - User 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/today-stocks/1",
+					"host": ["{{base_url}}"],
+					"path": ["api", "today-stocks", "1"]
+				},
+				"description": "Return all reward events for user 1 for TODAY only"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Today's Stocks - User 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/today-stocks/2",
+					"host": ["{{base_url}}"],
+					"path": ["api", "today-stocks", "2"]
+				},
+				"description": "Return all reward events for user 2 for TODAY only"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Historical INR - User 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/historical-inr/1",
+					"host": ["{{base_url}}"],
+					"path": ["api", "historical-inr", "1"]
+				},
+				"description": "Return INR valuation per past day (up to yesterday) for user 1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Historical INR - User 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/historical-inr/2",
+					"host": ["{{base_url}}"],
+					"path": ["api", "historical-inr", "2"]
+				},
+				"description": "Return INR valuation per past day (up to yesterday) for user 2"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Stats - User 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/stats/1",
+					"host": ["{{base_url}}"],
+					"path": ["api", "stats", "1"]
+				},
+				"description": "Return total shares rewarded today (grouped by stock) and current INR portfolio value for user 1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Stats - User 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/stats/2",
+					"host": ["{{base_url}}"],
+					"path": ["api", "stats", "2"]
+				},
+				"description": "Return total shares rewarded today (grouped by stock) and current INR portfolio value for user 2"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Portfolio - User 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/portfolio/1",
+					"host": ["{{base_url}}"],
+					"path": ["api", "portfolio", "1"]
+				},
+				"description": "Show full holdings grouped by stock with current INR value for user 1 (BONUS endpoint)"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Portfolio - User 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/portfolio/2",
+					"host": ["{{base_url}}"],
+					"path": ["api", "portfolio", "2"]
+				},
+				"description": "Show full holdings grouped by stock with current INR value for user 2 (BONUS endpoint)"
+			},
+			"response": []
+		},
+		{
+			"name": "Test Duplicate Reward (Should Fail)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userId\": 1,\n  \"symbol\": \"RELIANCE\",\n  \"quantity\": 2.5,\n  \"timestamp\": \"2025-01-23T10:30:00Z\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/reward",
+					"host": ["{{base_url}}"],
+					"path": ["api", "reward"]
+				},
+				"description": "Test deduplication - this should fail with 409 Conflict if the first reward was already created"
+			},
+			"response": []
+		},
+		{
+			"name": "Test Invalid Quantity (Should Fail)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userId\": 1,\n  \"symbol\": \"RELIANCE\",\n  \"quantity\": -5,\n  \"timestamp\": \"2025-01-23T10:30:00Z\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/reward",
+					"host": ["{{base_url}}"],
+					"path": ["api", "reward"]
+				},
+				"description": "Test validation - negative quantity should fail"
+			},
+			"response": []
+		},
+		{
+			"name": "Test Invalid Timestamp (Should Fail)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userId\": 1,\n  \"symbol\": \"RELIANCE\",\n  \"quantity\": 2.5,\n  \"timestamp\": \"invalid-timestamp\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/reward",
+					"host": ["{{base_url}}"],
+					"path": ["api", "reward"]
+				},
+				"description": "Test validation - invalid timestamp format should fail"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
