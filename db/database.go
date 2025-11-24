@@ -153,8 +153,8 @@ func Close() error {
 }
 
 // Helper function to parse decimal (panics on error - only for init)
-func mustParseDecimal(s string) models.decimal.Decimal {
-	d, err := models.decimal.NewFromString(s)
+func mustParseDecimal(s string) decimal.Decimal {
+	d, err := decimal.NewFromString(s)
 	if err != nil {
 		panic(err)
 	}
