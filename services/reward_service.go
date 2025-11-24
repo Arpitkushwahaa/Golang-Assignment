@@ -94,7 +94,6 @@ func (s *RewardService) CreateReward(userID int, symbol string, quantity decimal
 	}
 
 	// Create ledger entries
-	ledgerService := NewLedgerService()
 	if err := s.createLedgerEntriesInTx(tx, &rewardEvent, pricePerShare); err != nil {
 		tx.Rollback()
 		return fmt.Errorf("failed to create ledger entries: %w", err)
@@ -122,7 +121,7 @@ func (s *RewardService) createLedgerEntriesInTx(tx *gorm.DB, rewardEvent *models
 	timestamp := rewardEvent.Timestamp
 
 	totalValue := utils.RoundINR(pricePerShare.Mul(quantity))
-	brokerage, stt, gst, totalFees := utils.CalculateFees(pricePerShare, quantity)
+	_, _, _, totalFees := utils.CalculateFees(pricePerShare, quantity)
 
 	entries := []models.LedgerEntry{
 		{

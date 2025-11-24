@@ -3,7 +3,6 @@ package utils
 import (
 	"fmt"
 	"math/rand"
-	"stocky-backend/models"
 	"time"
 
 	"github.com/shopspring/decimal"
