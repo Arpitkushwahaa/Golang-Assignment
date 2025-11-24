@@ -135,5 +135,5 @@ func RoundINR(amount decimal.Decimal) decimal.Decimal {
 
 // RoundQuantity rounds quantity to 6 decimal places
 func RoundQuantity(quantity decimal.Decimal) decimal.Decimal {
-	return amount.Round(6)
+	return quantity.Round(6)
 }
